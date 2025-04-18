@@ -1,0 +1,26 @@
+# Mr-DragonStar Original Script:
+# Instalar los Visual C++ Redistributables
+winget install --id=Microsoft.VCRedist.2005.x86 -e
+winget install --id=Microsoft.VCRedist.2005.x64 -e
+winget install --id=Microsoft.VCRedist.2008.x86 -e
+winget install --id=Microsoft.VCRedist.2008.x64 -e
+winget install --id=Microsoft.VCRedist.2010.x86 -e
+winget install --id=Microsoft.VCRedist.2010.x64 -e
+winget install --id=Microsoft.VCRedist.2012.x86 -e
+winget install --id=Microsoft.VCRedist.2012.x64 -e
+winget install --id=Microsoft.VCRedist.2013.x86 -e
+winget install --id=Microsoft.VCRedist.2013.x64 -e
+winget install --id=Microsoft.VCRedist.2015+.x86 -e
+winget install --id=Microsoft.VCRedist.2015+.x64 -e
+
+# Intentar abrir en Chrome, si no, usar Edge
+$youtubeURL = "https://www.youtube.com/@Mr.DragonStar"
+
+if (Test-Path "$env:ProgramFiles\Google\Chrome\Application\chrome.exe") {
+    Start-Process "$env:ProgramFiles\Google\Chrome\Application\chrome.exe" $youtubeURL
+} elseif (Test-Path "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe") {
+    Start-Process "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe" $youtubeURL
+} else {
+    # Si Chrome no está instalado, abrir en Edge
+    Start-Process "msedge.exe" $youtubeURL
+}
