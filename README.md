@@ -10,4 +10,4 @@ USDT Tron(TRC20):TA6ouzHLHtWpBGDizF6FQXxKsxzZo6J6RL
 DOGE (dogecoin):DEvXhCWZpYfbaAbgE3Y1pWbKYJ1ojkySN2
 
 Si tienes algún trabajo para mi escríbeme..
-echo mr.dragonstar.official@gmail.com
+mr.dragonstar.official@gmail.com
